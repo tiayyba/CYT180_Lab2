@@ -30,14 +30,95 @@ This lab will cover the following Python topics:
 ## Environment Setup
 You will work in Jupyter Notebook using a local Anaconda installation that you did in week1.
 Verify that the following libraries are available:
-- pandas
-- bottleneck
-- numexpr
-- matplotlib
+* `pandas`
+* `bottleneck`
+* `numexpr`
+* `matplotlib`
+
 If any library is missing, install it using:
-``` Python
+
+```python
 !pip install pandas bottleneck numexpr matplotlib
 ```
+---
+
+## Task 2: Learn Pandas Basics (No Submission)
+
+Watch the following video:
+
+**Pandas Full Python Course – Data Science Fundamentals (YouTube)**
+
+* Use the chapter list below the video
+* Watch **at minimum** up to and including **Data Exploration**
+* You are encouraged to follow along in your own notebook
+
+No submission is required for this task.
+
+---
+
+## Task 3: Pandas Exercise (Submission Required)
+
+You are provided with the file **`cities.csv`**.
+
+Create a new Jupyter Notebook and complete the steps below **in order**.
+
+### Required Steps
+
+1. Read the CSV file into a Pandas DataFrame
+2. Display basic DataFrame information
+3. Display the first and last rows using `head()` and `tail()`
+4. Select and display the names of cities located in the state **CA**
+
+---
+
+## Documentation Requirements
+
+* Take a screenshot for **each step** above
+* Each screenshot must show:
+
+  * The Python code
+  * The output produced
+* Paste all screenshots into **one MS Word document**
+* Add brief comments explaining what each step does
+
+---
+
+## Optional Reference
+
+* Chris Albon – Importing CSV Files into Pandas
+
+---
+
+## Submission Instructions
+
+* Submit your work on **Blackboard (BB)**
+* If submitting multiple files, compress them into a **ZIP / 7ZIP / RAR** archive
+
+### File Naming Format
+
+Your file name **must include**:
+
+* Course ID (`CYT180`)
+* Lab number (`Lab2`)
+* Your full name
+
+**Example:**
+
+```
+CYT180_Lab2_Peter_Smith
+```
+
+---
+
+## Notes
+
+* This is an **individual assignment**
+* Submissions that do not follow the instructions or naming format will **not be accepted**
+* Screenshots must be clear and readable
+
+---
+
+✅ This lab builds the foundation for analyzing cybersecurity datasets in later labs.
 
 ---
 
