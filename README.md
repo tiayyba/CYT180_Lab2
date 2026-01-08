@@ -15,17 +15,6 @@ By the end of this lab, you should be able to:
 - Filter data using conditions
 - Clearly document and explain analysis steps
 ---
-## Topics Covered
-
-This lab will cover the following Python topics:
-1. Introduction and Variables
-2. Strings and Loops
-3. Tuples
-4. Lists (Arrays)
-5. Built-in Functions
-6. Indexes and Slices
-7. Functions
-8. Function Parameters and Typing
 
 ## Environment Setup
 You will work in Jupyter Notebook using a local Anaconda installation that you did in week1.
@@ -42,32 +31,14 @@ If any library is missing, install it using:
 ```
 ---
 
-## Task 2: Learn Pandas Basics (No Submission)
-
-Watch the following video:
-
-**Pandas Full Python Course – Data Science Fundamentals (YouTube)**
-
-* Use the chapter list below the video
-* Watch **at minimum** up to and including **Data Exploration**
-* You are encouraged to follow along in your own notebook
-
-No submission is required for this task.
-
----
-
-## Task 3: Pandas Exercise (Submission Required)
+## Task 1: Pandas Exercise (Submission Required)
 
 You are provided with the file **`cities.csv`**.
-
 Create a new Jupyter Notebook and complete the steps below **in order**.
-
-### Required Steps
-
-1. Read the CSV file into a Pandas DataFrame
-2. Display basic DataFrame information
-3. Display the first and last rows using `head()` and `tail()`
-4. Select and display the names of cities located in the state **CA**
+* 1. Read the CSV file into a Pandas DataFrame
+* 2. Display basic DataFrame information
+* 3. Display the first and last rows using `head()` and `tail()`
+* 4. Select and display the names of cities located in the state **CA**
 
 ---
 
@@ -75,75 +46,19 @@ Create a new Jupyter Notebook and complete the steps below **in order**.
 
 * Take a screenshot for **each step** above
 * Each screenshot must show:
-
   * The Python code
   * The output produced
 * Paste all screenshots into **one MS Word document**
 * Add brief comments explaining what each step does
-
 ---
-
-## Optional Reference
-
-* Chris Albon – Importing CSV Files into Pandas
-
----
-
-## Submission Instructions
-
-* Submit your work on **Blackboard (BB)**
-* If submitting multiple files, compress them into a **ZIP / 7ZIP / RAR** archive
-
-### File Naming Format
-
-Your file name **must include**:
-
-* Course ID (`CYT180`)
-* Lab number (`Lab2`)
-* Your full name
-
-**Example:**
-
-```
-CYT180_Lab2_Peter_Smith
-```
-
----
-
-## Notes
-
-* This is an **individual assignment**
-* Submissions that do not follow the instructions or naming format will **not be accepted**
-* Screenshots must be clear and readable
-
----
-
-✅ This lab builds the foundation for analyzing cybersecurity datasets in later labs.
-
----
-
 ## Reference Material
 
 The following materials can help you complete this lab. These are **optional** and meant for guidance only:
 
 1. Instructor demonstration of the concepts
-2. Python official documentation: https://docs.python.org/3/tutorial/index.html
-3. Additional Python tutorial: https://pythonprogramming.net/introduction-learn-python-3-tutorials/
-<br>This site contains **step-by-step tutorials and videos** covering:
-     - Introduction to Python
-     - Tuples, Strings, and Loops
-     - Lists (Arrays)
-     - Built-in Functions
-     - Indexes and Slices
-     - Functions
-     - Function Parameters and Typing  
-
-## Starter Instructions
-
-Create a Jupyter Notebook named `YourSenecaUSername_lab1.ipynb`. Complete **all tasks below in order**. Make sure your notebook includes:
-* Code cells. Each task should be completed in its **own cell**.
-* Output
-* Brief comments (using Markdown cells) where requested
+2. Additional Python tutorial: https://www.w3schools.com/python/pandas/default.asp
+3. Pandas Crash Course: https://www.youtube.com/watch?v=EhYC02PD_gc
+   - Below the start page you will see the list of Chapters in this video, and timestamps. Watch at the minimum up Data Exploration (17 minutes of video). 
 
 ---
 ## Submission Instructions
@@ -169,110 +84,6 @@ Follow these steps carefully:
    - Code runs correctly and outputs are visible.
 ---
 
-
-## Task 1: Introduction & Variables
-
-* Copy the following **starter code** in your notebook.
-```python
-name = "Student"
-student_id = "000000"
-print(name)
-print(student_id)
-```
-* Replace the placeholder values with your **real name** and **student ID**.
-* Add a new variable called `program` and assign it a logical value.
-* Print all values using **one print statement**.
-* Take a screenshot showing your code and its output, and include it in the PDF under the heading **Task 1**.
-
----
-
-## Task 2: Strings and Loops
-In a new cell in the notebook write code that:
-* Stores a sentence in a string variable.
-* Uses a `for` loop to print each character on a new line.
-* Add a Markdown cell explaining **where loops are useful**.
-* Take a screenshot of the code and output and include it in the PDF under Task 2.
-
----
-
-## Task 3: Tuples
-
-* In a new cell in the notebook, create a tuple called `device_info` that stores:
-     * Device type (e.g., "Laptop")
-     * Operating system (e.g., "Windows")
-     * Year purchased
-* Print each value using indexing.
-* Attempt to modify one value and **observe what happens**.
-* Add a short comment explaining why this happens.
-* Take a screenshot and include it in the PDF under Task 3.
-
----
-
-## Task 4: Lists (Arrays)
-
-* Copy the following **starter code** in a new cell in your notebook.
-```python
-courses = ["CYT180", "CYS101", "DBS211"]
-```
-* Add one more course to the list using the `append` mthod.
-* Use a for loop to print each course in the format:
-  ```
-  I am enrolled in CYT180
-  I am enrolled in CYS101
-  I am enrolled in DBS211
-  I am enrolled in NET101
-  ```
-* Print the total number of courses.
-* Take a screenshot and include it in the PDF under Task 4
-
----
-
-## Task 5: Built-in Functions
-
-Using your `courses` list from previous task:
-
-* Use at least **three built-in functions** (e.g., `len()`, `sorted()`, `type()`)
-* Print the result of each function
-* Add a Markdown cell explaining **why built-in functions are useful**.
-* Take a screenshot and include it in the PDF under Task 5.
-
----
-
-## Task 6: Indexes and Slices
-
-Using the `courses` list:
-
-* Print the first course.
-* Print the last course.
-* Print a slice containing the first two courses.
-* Explain the difference between **indexing** and **slicing**.
-* Take a screenshot and include it in the PDF under Task 6.
-
----
-
-## Task 7: Functions
-
-Write a function named `greet_student` that:
-
-* Accepts a name as a parameter.
-* Prints a greeting message.
-* Call the function **at least twice** with different names.
-* Take a screenshot and include it in the PDF under Task 7.
-
----
-
-## Task 8: Function Parameters and Typing
-
-Write a function that:
-
-* Accepts two numbers.
-* Returns their average.
-* Call the function with integers.
-* Call the function with decimal values.
-* Add a Markdown cell explaining **what you learned about function parameters and data types**.
-* Take a screenshot and include it in the PDF under Task 8.
-
----
 
 ## Final Reflection
 
