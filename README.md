@@ -1,24 +1,42 @@
 # CYT180 – Lab 2: Pandas DataFrames
 
-**Weight:** 3% <br>
-**Work Type:** Individual <br>
-**Submission Format:** Single PDF file containing screenshots from the Jupyter Notebook <br>
+**Weight:** 3%  
+**Work Type:** Individual  
+**Submission Format:** Single PDF file containing screenshots from the Jupyter Notebook
 
 ---
 
 ## Lab Objectives
 
-This lab introduces Pandas DataFrames, a foundational tool for data analytics used extensively in cybersecurity for analyzing logs, alerts, and structured datasets. You will prepare your environment, learn Pandas basics through a guided video, and complete a hands-on exercise using a CSV file. The icnstructor will demoinstrate the use of Pandas during the in-person lab session.
+This lab introduces **Pandas DataFrames**, a foundational tool for data analytics used extensively in cybersecurity for analyzing logs, alerts, and structured datasets. The instructor will demonstrate the use of Pandas during the in-person lab session.
+
 By the end of this lab, you should be able to:
-- Load CSV data into a Pandas DataFrame
-- Inspect and explore tabular data
-- Filter data using conditions
-- Clearly document and explain analysis steps
+
+* Load CSV data into a Pandas DataFrame
+* Inspect and explore tabular data
+* Filter data using conditions
+* Perform simple analytical queries
+* Apply insights to cybersecurity-relevant datasets
+* Clearly document and explain analysis steps
+
+---
+
+## Topics Covered
+
+- Pandas DataFrames basics: load, inspect, and explore data  
+- Filtering data using conditions  
+- Aggregating and counting events  
+- Simulating security events for analysis  
+- Visualizing anomalies and alert levels  
+
 ---
 
 ## Environment Setup
-You will work in Jupyter Notebook using a local Anaconda installation that you did in week1.
+
+You will work in **Jupyter Notebook** using a **local Anaconda installation** (completed in Week 1).
+
 Verify that the following libraries are available:
+
 * `pandas`
 * `bottleneck`
 * `numexpr`
@@ -29,77 +47,156 @@ If any library is missing, install it using:
 ```python
 !pip install pandas bottleneck numexpr matplotlib
 ```
+## Dataset
+
+Use the provided file **`cities.csv`**.
+
+It includes:
+
+- Geographic data: `LatD`, `LatM`, `LatS`, `NS`, `LonD`, `LonM`, `LonS`, `EW`, `City`, `State`  
+- Cybersecurity-related columns:  
+  - `failed_logins` → number of failed login attempts per city  
+  - `login_attempts` → total login attempts per city  
+  - `alerts` → Low / Medium / High alert level  
+  - `last_incident` → timestamp of the last security incident  
 ---
 
-## Task 1: Pandas Exercise (Submission Required)
+## Task 1: Load and Inspect the Dataset
 
 You are provided with the file **`cities.csv`**.
-Create a new Jupyter Notebook and complete the steps below **in order**.
-* 1. Read the CSV file into a Pandas DataFrame
-* 2. Display basic DataFrame information
-* 3. Display the first and last rows using `head()` and `tail()`
-* 4. Select and display the names of cities located in the state **CA**
+
+1. Create a new Jupyter Notebook.
+2. Import the Pandas library.
+3. Read the CSV file into a Pandas DataFrame.
+4. Display basic DataFrame information using the `.info()` method.
 
 ---
 
+## Task 2: Explore the DataFrame
+
+1. Display the first five rows of the DataFrame.
+2. Display the last five rows of the DataFrame.
+3. Identify how many rows and columns exist in the dataset.
+
+---
+## Task 3: Data Filtering (Identify High-Risk Cities)
+
+**Goal:** Find cities with potential security issues by analyzing failed login activity.
+
+1. **Select cities with many failed logins**  
+   - Identify cities where the `failed_logins` column is **greater than 50**.  
+   - Hint: In Pandas, “filtering” means keeping only rows that meet a condition.  
+   - After this step, your DataFrame should only show cities that might need attention based on **high number of failed logins**.
+
+2. **Create a new column for the failed login ratio**  
+   - Calculate the proportion of failed logins relative to total login attempts.  
+   - Hint: Divide `failed_logins` by `login_attempts` and save the result in a new column (for example, **`failed_login_ratio`**). Use the assignment pattern in Pandas: `df['new_column_name'] = ...`  
+   - This ratio helps highlight cities where login failures are **high relative to activity**, not just raw numbers.
+
+3. **Filter the DataFrame based on the failed login ratio**  
+   - Keep only cities where **`failed_login_ratio`** is high (for example, above 0.3).  
+   - After this step, your DataFrame should show **the cities at the highest risk**.
+
+---
+
+### Reflection Questions
+
+- Why is it useful to consider **both the number of failed logins and the failed login ratio**?  
+- How does this approach help a cybersecurity analyst **prioritize investigations**?  
+- What threshold would you choose to flag the **most critical cities**?
+
+
+## Task 4: Simple Analysis
+
+1. Count how many cities exist in each state.
+2. Identify the state with the highest number of cities.
+3. Display the result clearly.
+
+---
+## Task 5: Cybersecurity Event Simulation
+
+1. Create a new column failed_logins and simulate a random number of failed login attempts for each city.
+2. Identify cities with more than a threshold (e.g., 50) failed login attempts.
+3. Discuss how such analysis could be applied to real security logs to detect potential attacks.
+---
+## Task 6: Visualization (Submission Required)
+
+1. Create a bar chart showing the number of failed login attempts per city.
+2. Highlight cities with suspiciously high failed attempts in a different color.
+3. Explain how visualization can aid cybersecurity analysts in spotting anomalies.
+---
 ## Documentation Requirements
 
-* Take a screenshot for **each step** above
-* Each screenshot must show:
+* Take a screenshot for **each task** above
+* Each screenshot must clearly show:
   * The Python code
   * The output produced
+  * Your username and current datetime from a separate windows terminal.
 * Paste all screenshots into **one MS Word document**
-* Add brief comments explaining what each step does
 ---
+
 ## Reference Material
 
-The following materials can help you complete this lab. These are **optional** and meant for guidance only:
+The following materials are **optional** and provided for additional support:
 
-1. Instructor demonstration of the concepts
-2. Additional Python tutorial: https://www.w3schools.com/python/pandas/default.asp
-3. Pandas Crash Course: https://www.youtube.com/watch?v=EhYC02PD_gc
-   - Below the start page you will see the list of Chapters in this video, and timestamps. Watch at the minimum up Data Exploration (17 minutes of video). 
+1. Instructor in-class demonstration
+2. W3Schools Pandas Tutorial: [https://www.w3schools.com/python/pandas/default.asp](https://www.w3schools.com/python/pandas/default.asp)
+3. Pandas Crash Course (YouTube): [https://www.youtube.com/watch?v=EhYC02PD_gc](https://www.youtube.com/watch?v=EhYC02PD_gc)  
+   *Watch at minimum up to the **Data Exploration** section (~17 minutes)*
 
 ---
+
 ## Submission Instructions
 
-All lab work must be submitted as a **single PDF file** on Blackboard containing screenshots of your notebook. You should create a **Word document**, add all screenshots in order, and then convert it to PDF.<br>
-Follow these steps carefully:
-1. At the top of each task cell, include your **name and student ID as a comment**.  
-     Example:
-     ```python
-     # Name: Your Name
-     # Student ID: 123456789
-     ```
-4. **Demonstrate work was done on your own machine**:
-   - Open a **Windows Terminal** (or command prompt).  
-   - Print your **system username**, **current date**, and **current time**. You will capture this output along with code.
-4. Capture screenshots of all tasks in the notebook:
-   - Each screenshot must show code and its output in the cell along with your system username, and current datetime from terminal. You can keep the terminal on the right side of notebook and then capture the screenshot.
-   - Place each screenshot under its corresponding task heading (Task 1, Task 2, … Task 8).
-5. Compile the word document as a PDF:
-6. Check before submission:
-   - All notebook screenshots clearly show your name and student ID along with system username, current date and time from the windows terminal.
-   - All 8 tasks are included and clearly labeled.
-   - Code runs correctly and outputs are visible.
----
+All lab work must be submitted as a **single PDF file** on Blackboard.
 
+### Required Steps
+
+1. Create a Word document and paste screenshots in order under labeled headings (Task 1, Task 2, etc.).
+2. At the top of each task section, include your **name and student ID as comments** in the notebook.
+
+```python
+# Name: Your Name
+# Student ID: 123456789
+```
+
+3. Demonstrate the work was completed on your own machine:
+   * Open **Windows Terminal / Command Prompt**
+   * Display your **system username**, **current date**, and **current time**
+4. Capture screenshots showing:
+   * Notebook code and output
+   * System username, date, and time visible in the terminal
+5. Convert the Word document to **PDF** before submission.
+
+### Before You Submit
+
+Ensure that:
+
+* All tasks are included and clearly labeled
+* Screenshots are readable
+* Code executes correctly
+* Your name, student ID, system username, date, and time are visible
+
+---
 
 ## Final Reflection
 
-At the bottom of the word document, answer the following questions:
-1. Which task helped you understand Python the most?
-2. Which task was the most challenging and why?
-3. What is one Python concept you feel confident about after completing this lab?
-
-Each answer should be **2–4 sentences**, written in your own words.
+At the end of your document, answer the following questions:
+1. Which task gave you the most insight into analyzing potential security events?
+2. How did filtering and aggregation help you identify possible anomalies?
+3. How could visualization help a cybersecurity analyst in real-time threat detection?
+4. Which task did you find most challenging and why?
+5. What Python or Pandas concept do you feel confident applying to cybersecurity data after completing this lab?
+Each response should be **2–4 sentences**, written in your own words. AI based answers will lead to a grade of zero for the submission.
 
 ---
 
 ## Important Notes
-* Late submissions receive -20% per day.
-* Submissions which do not follow the given guidelines will be graded as zero!
-* Academic integrity policies apply.
+
+* Late submissions receive **-20% per day**
+* Submissions that do not follow the instructions will receive a **grade of zero**
+* Academic integrity policies apply
 
 ---
 
+✅ This lab builds essential skills for future cybersecurity data analysis labs.
