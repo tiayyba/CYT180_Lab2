@@ -26,7 +26,6 @@ By the end of this lab, you should be able to:
 - Pandas DataFrames basics: load, inspect, and explore data  
 - Filtering data using conditions  
 - Aggregating and counting events  
-- Simulating security events for analysis  
 - Visualizing anomalies and alert levels  
 
 ---
@@ -50,6 +49,8 @@ If any library is missing, install it using:
 Use the provided file **`cities.csv`**.
 
 It includes the following columns:  
+  - `City` → city name
+  - `State` → state code
   - `failed_logins` → number of failed login attempts per city  
   - `login_attempts` → total login attempts per city  
   - `alerts` → Low / Medium / High alert level  
