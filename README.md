@@ -91,8 +91,7 @@ You are provided with the file **`cities.csv`**.
 1. Count how many cities exist in each state.
 2. Identify the state with the highest number of cities. Use the `idxmax()` method.
 3. Display the top 5 states with the most cities.
-4. Explain in your own words what idxmax() does and why it is used here.
-
+4. Explain in your own words (1–2 sentences) what idxmax() does and why it is used here.
 ---
 ## Task 5: Basic Visualization of Failed Logins
 **Goal:** Use visualization to identify cities with unusually high failed login activity.
