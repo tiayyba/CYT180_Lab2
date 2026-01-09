@@ -58,18 +58,15 @@ It includes the following columns:
 ---
 
 ## Task 1: Load and Inspect the Dataset
-
 You are provided with the file **`cities.csv`**.
-
 1. Create a new Jupyter Notebook.
 2. Import the Pandas library.
 3. Read the CSV file into a Pandas DataFrame.
-4. Display basic DataFrame information using the `.info()` method. Add your comments in the code explaining does this methods acheive.
+4. Display basic DataFrame information using the `.info()` method. Add comments in your code explaining what this method does and what information it provides.
 
 ---
 
 ## Task 2: Explore the DataFrame
-
 1. Display the first five rows of the DataFrame.
 2. Display the last five rows of the DataFrame.
 3. Identify how many rows and columns exist in the dataset.
