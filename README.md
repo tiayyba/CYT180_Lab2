@@ -38,23 +38,18 @@ You will work in **Jupyter Notebook** using a **local Anaconda installation** (c
 Verify that the following libraries are available:
 
 * `pandas`
-* `bottleneck`
-* `numexpr`
 * `matplotlib`
 
 If any library is missing, install it using:
 
 ```python
-!pip install pandas bottleneck numexpr matplotlib
+!pip install pandas matplotlib
 ```
 ## Dataset
 
 Use the provided file **`cities.csv`**.
 
-It includes:
-
-- Geographic data: `LatD`, `LatM`, `LatS`, `NS`, `LonD`, `LonM`, `LonS`, `EW`, `City`, `State`  
-- Cybersecurity-related columns:  
+It includes the following columns:  
   - `failed_logins` → number of failed login attempts per city  
   - `login_attempts` → total login attempts per city  
   - `alerts` → Low / Medium / High alert level  
@@ -68,7 +63,7 @@ You are provided with the file **`cities.csv`**.
 1. Create a new Jupyter Notebook.
 2. Import the Pandas library.
 3. Read the CSV file into a Pandas DataFrame.
-4. Display basic DataFrame information using the `.info()` method.
+4. Display basic DataFrame information using the `.info()` method. Add your comments in the code explaining does this methods acheive.
 
 ---
 
@@ -87,42 +82,44 @@ You are provided with the file **`cities.csv`**.
    - Identify cities where the `failed_logins` column is **greater than 50**.  
    - Hint: In Pandas, “filtering” means keeping only rows that meet a condition.  
    - After this step, your DataFrame should only show cities that might need attention based on **high number of failed logins**.
-
-2. **Create a new column for the failed login ratio**  
-   - Calculate the proportion of failed logins relative to total login attempts.  
-   - Hint: Divide `failed_logins` by `login_attempts` and save the result in a new column (for example, **`failed_login_ratio`**). Use the assignment pattern in Pandas: `df['new_column_name'] = ...`  
-   - This ratio helps highlight cities where login failures are **high relative to activity**, not just raw numbers.
-
-3. **Filter the DataFrame based on the failed login ratio**  
-   - display only cities where **`failed_login_ratio`** is high (for example, above 0.3).  
-   - After this step, your DataFrame should show **the cities at the highest risk**.
+2. Sort the filtered cities by failed_logins descending
+3. Count how many high-risk cities there are.
 
 ### Reflection Questions based on Task3
 
-- Why is it useful to consider **both the number of failed logins and the failed login ratio**?  
-- How does this approach help a cybersecurity analyst **prioritize investigations**?  
-- What threshold would you choose to flag the **most critical cities**?
-
-
-## Task 4: Simple Analysis
-
+- Why is it useful to sort and count high-risk cities?  
+- How could this help a cybersecurity analyst prioritize investigations?  
+---
+## Task 4: Simple Analysis of Cities by State
+**Goal:** Learn how to aggregate and count data using Pandas.
 1. Count how many cities exist in each state.
-2. Identify the state with the highest number of cities.
-3. Display the result clearly.
+2. Identify the state with the highest number of cities. Use the `idxmax()` method.
+3. Display the top 5 states with the most cities.
+4. Explain in your own words what idxmax() does and why it is used here.
 
 ---
-## Task 5: Cybersecurity Event Simulation
+## Task 5: Basic Visualization of Failed Logins
+**Goal:** Use visualization to identify cities with unusually high failed login activity.
 
-1. Create a new column failed_logins and simulate a random number of failed login attempts for each city.
-2. Identify cities with more than a threshold (e.g., 50) failed login attempts.
-3. Discuss how such analysis could be applied to real security logs to detect potential attacks.
----
-## Task 6: Visualization (Submission Required)
+1. **Create a bar chart showing failed logins per city**
+   - The x-axis should represent **City**
+   - The y-axis should represent **failed_logins**
+   - Rotate the city names so they are readable.
+   - Add a title and axis labels.
 
-1. Create a bar chart showing the number of failed login attempts per city.
-2. Highlight cities with suspiciously high failed attempts in a different color.
-3. Explain how visualization can aid cybersecurity analysts in spotting anomalies.
----
+2. **Highlight high-risk cities**
+   - Cities with more than **50 failed logins** should appear in a different color
+   - This helps visually separate normal activity from suspicious activity.
+
+**Hints:**
+- Use the `matplotlib.pyplot` library
+- A bar chart is created using `plt.bar()`
+- You can use a conditional list (if/else) to assign colors based on failed login values.
+- Use `plt.show()` to display the chart
+
+**Reflection Questions:**
+- How could this type of visualization help a cybersecurity analyst respond faster to threats?
+
 ## Documentation Requirements
 
 * Take a screenshot for **each task** above
