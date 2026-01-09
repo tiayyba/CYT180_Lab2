@@ -81,8 +81,7 @@ You are provided with the file **`cities.csv`**.
 2. Sort the filtered cities by `failed_logins` in **descending order**.
 3. Count how many high-risk cities there are.
 
-### Reflection Questions based on Task3
-
+### Reflection questions based on Task 3
 - Why is it useful to sort and count high-risk cities?  
 - How could this help a cybersecurity analyst prioritize investigations?  
 ---
@@ -109,19 +108,19 @@ You are provided with the file **`cities.csv`**.
 **Hints:**
 - Use the `matplotlib.pyplot` library
 - A bar chart is created using `plt.bar()`
-- You can use a conditional list (if/else) to assign colors based on failed login values.
+- You can use a conditional list (if/else) to assign colors based on failed login values
 - Use `plt.show()` to display the chart
 
-**Reflection Questions:**
+**Reflection question based on Task 5:**
 - How could this type of visualization help a cybersecurity analyst respond faster to threats?
 
 ## Documentation Requirements
 
-* Take a screenshot for **each task** above
+* Take a screenshot for **each task** above.
 * Each screenshot must clearly show:
   * The Python code
-  * The output produced
-  * Your username and current datetime from a separate windows terminal.
+  * The output produced (If the output is too big, only show the first few lines)
+  * Your username and current datetime from a separate Windows Terminal.
 * Paste all screenshots into **one MS Word document**
 ---
 
@@ -185,8 +184,6 @@ Each response should be **2–4 sentences**, written in your own words. AI based
 
 * Late submissions receive **-20% per day**
 * Submissions that do not follow the instructions will receive a **grade of zero**
-* Academic integrity policies apply
+* Academic integrity policies apply.
+* AI-generated answers are not permitted and may result in a grade of zero.
 
----
-
-✅ This lab builds essential skills for future cybersecurity data analysis labs.
