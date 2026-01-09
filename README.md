@@ -73,14 +73,12 @@ You are provided with the file **`cities.csv`**.
 
 ---
 ## Task 3: Data Filtering (Identify High-Risk Cities)
-
 **Goal:** Find cities with potential security issues by analyzing failed login activity.
-
 1. **Select cities with many failed logins**  
    - Identify cities where the `failed_logins` column is **greater than 50**.  
    - Hint: In Pandas, “filtering” means keeping only rows that meet a condition.  
    - After this step, your DataFrame should only show cities that might need attention based on **high number of failed logins**.
-2. Sort the filtered cities by failed_logins descending
+2. Sort the filtered cities by `failed_logins` in **descending order**.
 3. Count how many high-risk cities there are.
 
 ### Reflection Questions based on Task3
