@@ -94,12 +94,10 @@ You are provided with the file **`cities.csv`**.
    - This ratio helps highlight cities where login failures are **high relative to activity**, not just raw numbers.
 
 3. **Filter the DataFrame based on the failed login ratio**  
-   - Keep only cities where **`failed_login_ratio`** is high (for example, above 0.3).  
+   - display only cities where **`failed_login_ratio`** is high (for example, above 0.3).  
    - After this step, your DataFrame should show **the cities at the highest risk**.
 
----
-
-### Reflection Questions
+### Reflection Questions based on Task3
 
 - Why is it useful to consider **both the number of failed logins and the failed login ratio**?  
 - How does this approach help a cybersecurity analyst **prioritize investigations**?  
