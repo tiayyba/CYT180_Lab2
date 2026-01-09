@@ -165,19 +165,6 @@ Ensure that:
 * Screenshots are readable
 * Code executes correctly
 * Your name, student ID, system username, date, and time are visible
-
----
-
-## Final Reflection
-
-At the end of your document, answer the following questions:
-1. Which task gave you the most insight into analyzing potential security events?
-2. How did filtering and aggregation help you identify possible anomalies?
-3. How could visualization help a cybersecurity analyst in real-time threat detection?
-4. Which task did you find most challenging and why?
-5. What Python or Pandas concept do you feel confident applying to cybersecurity data after completing this lab?
-Each response should be **2–4 sentences**, written in your own words. AI based answers will lead to a grade of zero for the submission.
-
 ---
 
 ## Important Notes
