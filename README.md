@@ -63,6 +63,7 @@ You are provided with the file **`cities.csv`**.
 2. Import the Pandas library.
 3. Read the CSV file into a Pandas DataFrame.
 4. Display basic DataFrame information using the `.info()` method. Add comments in your code explaining what this method does and what information it provides.
+5. Use the describe() method to explore the dataset. Understand what do the summary statistics represent. Explain in a markdown cell atleast 5 kind of information describe() provides.
 
 ---
 
@@ -114,9 +115,21 @@ You are provided with the file **`cities.csv`**.
 **Reflection question based on Task 5:**
 - How could this type of visualization help a cybersecurity analyst respond faster to threats?
 
+---
+## Task 6: Calculate Failed Login Rate
+**Goal:*** Create  a new analytical column that helps identify cities with a high proportion of failed login attempts.
+Raw counts alone can be misleading. A city with fewer total login attempts but many failures may represent a higher security risk. In this task, you will calculate a failed login rate to better assess risk.
+1. Create a new column called `failed_login_rate`.
+   - Calculate this value by dividing `failed_logins` by `login_attempts`.
+   - This value represents the proportion of login attempts that failed.
+2. Display the DataFrame to confirm that the new column was created successfully.
+3. Sort the DataFrame by `failed_login_rate` in **descending order**.
+4. Display the **top 5 cities** with the highest failed login rate.
+5. In markdown cell, explain why is the failed login rate more informative than looking at failed login counts alone?
+
 ## Documentation Requirements
 
-* Take a screenshot for **each task** above.
+* Take one or multiple screenshots for **each task** above.
 * Each screenshot must clearly show:
   * The Python code
   * The output produced (If the output is too big, only show the first few lines)
