@@ -39,7 +39,7 @@ Verify that the following libraries are available:
 * `pandas`
 * `matplotlib`
 
-If any library is missing, install it using:
+If any library is missing, please install it using:
 
 ```python
 !pip install pandas matplotlib
