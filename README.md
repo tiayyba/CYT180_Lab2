@@ -54,7 +54,8 @@ It includes the following columns:
   - `failed_logins` → number of failed login attempts per city  
   - `login_attempts` → total login attempts per city  
   - `alerts` → Low / Medium / High alert level  
-  - `last_incident` → timestamp of the last security incident  
+  - `last_incident` → timestamp of the last security incident
+    
 ---
 
 ## Task 1: Load and Inspect the Dataset
@@ -84,15 +85,19 @@ You are provided with the file **`cities.csv`**.
 
 ### Reflection questions based on Task 3
 - Why is it useful to sort and count high-risk cities?  
-- How could this help a cybersecurity analyst prioritize investigations?  
+- How could this help a cybersecurity analyst prioritize investigations?
+  
 ---
+
 ## Task 4: Simple Analysis of Cities by State
 **Goal:** Learn how to aggregate and count data using Pandas.
 1. Count how many cities exist in each state.
 2. Identify the state with the highest number of cities. Use the `idxmax()` method.
 3. Display the top 5 states with the most cities.
 4. Explain in your own words (1–2 sentences) what idxmax() does and why it is used here.
+   
 ---
+
 ## Task 5: Basic Visualization of Failed Logins
 **Goal:** Use visualization to identify cities with unusually high failed login activity.
 
@@ -116,6 +121,7 @@ You are provided with the file **`cities.csv`**.
 - How could this type of visualization help a cybersecurity analyst respond faster to threats?
 
 ---
+
 ## Task 6: Calculate Failed Login Rate
 **Goal:*** Create  a new analytical column that helps identify cities with a high proportion of failed login attempts.
 Raw counts alone can be misleading. A city with fewer total login attempts but many failures may represent a higher security risk. In this task, you will calculate a failed login rate to better assess risk.
@@ -135,6 +141,7 @@ Raw counts alone can be misleading. A city with fewer total login attempts but m
   * The output produced (If the output is too big, only show the first few lines)
   * Your username and current datetime from a separate Windows Terminal.
 * Paste all screenshots into **one MS Word document**
+  
 ---
 
 ## Reference Material
@@ -178,6 +185,7 @@ Ensure that:
 * Screenshots are readable
 * Code executes correctly
 * Your name, student ID, system username, date, and time are visible
+  
 ---
 
 ## Important Notes
