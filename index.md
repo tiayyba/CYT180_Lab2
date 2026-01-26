@@ -33,8 +33,7 @@ By the end of this lab, you should be able to:
 
 ## Environment Setup
 
-You will work in **Jupyter Notebook** using a **local Anaconda installation** (completed in Week 1).
-
+You will work in **Jupyter Notebook** using a **local Anaconda installation** (completed in Week 1).<br>
 Verify that the following libraries are available:
 
 * `pandas`
