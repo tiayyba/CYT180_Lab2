@@ -165,11 +165,10 @@ Follow these steps carefully:
    - Print your **system username**, **current date**, and **current time**. You will capture this output along with code.
 4. Capture screenshots of all tasks in the notebook:
    - Each screenshot must show code and its output in the cell along with your system username, and current datetime from terminal. You can keep the terminal on the right side of notebook and then capture the screenshot.
-   - Place each screenshot under its corresponding task heading (Task 1, Task 2, … Task 8).
+   - Place each screenshot under its corresponding task heading (Task 1, Task 2, … ).
 5. Compile the word document as a PDF:
 6. Check before submission:
    - All notebook screenshots clearly show your name and student ID along with system username, current date and time from the windows terminal.
-   - All 8 tasks are included and clearly labeled.
    - Code runs correctly and outputs are visible.
   
 ---
