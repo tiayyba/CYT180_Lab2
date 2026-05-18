@@ -8,7 +8,7 @@
 
 ## Lab Objectives
 
-This lab introduces **Pandas DataFrames**, a foundational tool for data analytics used extensively in cybersecurity for analyzing logs, alerts, and structured datasets. The instructor will demonstrate the use of Pandas during the in-person lab session.
+This lab introduces **Pandas DataFrames**, a foundational tool for data analytics used extensively in cybersecurity for analyzing logs, alerts, and structured datasets. The instructor will demonstrate the use of Pandas during the in-person lab session. 
 
 By the end of this lab, you should be able to:
 
@@ -44,6 +44,9 @@ If any library is missing, please install it using:
 ```python
 !pip install pandas matplotlib
 ```
+
+---
+
 ## Dataset
 
 Use the provided file **`cities.csv`**.
@@ -132,15 +135,6 @@ Raw counts alone can be misleading. A city with fewer total login attempts but m
 3. Sort the DataFrame by `failed_login_rate` in **descending order**.
 4. Display the **top 5 cities** with the highest failed login rate.
 5. In markdown cell, explain why is the failed login rate more informative than looking at failed login counts alone?
-
-## Documentation Requirements
-
-* Take one or multiple screenshots for **each task** above.
-* Each screenshot must clearly show:
-  * The Python code
-  * The output produced (If the output is too big, only show the first few lines)
-  * Your username and current datetime from a separate Windows Terminal.
-* Paste all screenshots into **one MS Word document**
   
 ---
 
@@ -157,41 +151,37 @@ The following materials are **optional** and provided for additional support:
 
 ## Submission Instructions
 
-All lab work must be submitted as a **single PDF file** on Blackboard.
-
-### Required Steps
-
-1. Create a Word document and paste screenshots in order under labeled headings (Task 1, Task 2, etc.).
-2. At the top of each task section, include your **name and student ID as comments** in the notebook.
-
-```python
-# Name: Your Name
-# Student ID: 123456789
-```
-
-3. Demonstrate the work was completed on your own machine:
-   * Open **Windows Terminal / Command Prompt**
-   * Display your **system username**, **current date**, and **current time**
-4. Capture screenshots showing:
-   * Notebook code and output
-   * System username, date, and time visible in the terminal
-5. Convert the Word document to **PDF** before submission.
-
-### Before You Submit
-
-Ensure that:
-
-* All tasks are included and clearly labeled
-* Screenshots are readable
-* Code executes correctly
-* Your name, student ID, system username, date, and time are visible
+All lab work must be submitted as a **single PDF file** on Blackboard containing screenshots of your notebook. You should create a **Word document**, add all screenshots in order, and then convert it to PDF.<br>
+The file name should be **<FirstName_LastName_StudentID_Lab02.pdf>**.
+Follow these steps carefully:
+1. At the top of each task cell, include your **name and student ID as a comment**.  
+     Example:
+     ```python
+     # Name: Your Name
+     # Student ID: 123456789
+     ```
+4. **Demonstrate work was done on your own machine**:
+   - Open a **Windows Terminal** (or command prompt).  
+   - Print your **system username**, **current date**, and **current time**. You will capture this output along with code.
+4. Capture screenshots of all tasks in the notebook:
+   - Each screenshot must show code and its output in the cell along with your system username, and current datetime from terminal. You can keep the terminal on the right side of notebook and then capture the screenshot.
+   - Place each screenshot under its corresponding task heading (Task 1, Task 2, … Task 8).
+5. Compile the word document as a PDF:
+6. Check before submission:
+   - All notebook screenshots clearly show your name and student ID along with system username, current date and time from the windows terminal.
+   - All 8 tasks are included and clearly labeled.
+   - Code runs correctly and outputs are visible.
   
 ---
 
 ## Important Notes
-
-* Late submissions receive **-20% per day**
-* Submissions that do not follow the instructions will receive a **grade of zero**
-* Academic integrity policies apply.
-* AI-generated answers are not permitted and may result in a grade of zero.
+- Late submissions receive **-20% per day**
+- Submissions that do not follow the instructions will receive a **grade of zero**. Examples include:
+  - Incorrect filename
+  - Incorrect order of screenshots
+  - Blurry screenshots
+  - Missing Task headings (Task1, Task2, etc)
+  - Work that seems rushed and unprofessional!
+- Academic integrity policies apply. I will ask students questions on thier labs in the following week. If you are not able to answer the questions, your submission's marks will be reduced!
+- AI-generated answers are not permitted and will strictly result in a grade of zero.
 
