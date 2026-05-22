@@ -152,7 +152,7 @@ The following materials are **optional** and provided for additional support:
 ## Submission Instructions
 
 All lab work must be submitted as a **single PDF file** on Blackboard containing screenshots of your notebook. You should create a **Word document**, add all screenshots in order, and then convert it to PDF.<br>
-The file name should be **<FirstName_LastName_StudentID_Lab02.pdf>**.
+The file name should be `<FirstName_LastName_StudentID_Lab02.pdf>`.
 Follow these steps carefully:
 1. At the top of each task cell, include your **name and student ID as a comment**.  
      Example:
